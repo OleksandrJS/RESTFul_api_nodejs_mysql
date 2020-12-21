@@ -1,9 +1,9 @@
 {
   "production": {
     "host": "eu-cdbr-west-03.cleardb.net",
-    "username": "b52bdd42370106",
-    "database": "heroku_3b9f83f3e5b5e7f",
-    "password": "31bd82d6",
+    "username": "b437a0d12267a8",
+    "database": "heroku_d67a5ff3c7f1487",
+    "password": "ca6e768e",
     "dialect": "mysql",
     "define": {
       "timestamps": false
