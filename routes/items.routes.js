@@ -123,7 +123,7 @@ router.get('/', async (req, res) => {
       item.dataValues.user = { id, phone, name, email };
     }
 
-    res.status(200).json({ items });
+    res.status(200).json(items);
   } catch (e) {
     res.status(500).json({ error: 'Something went wrong' });
   }
