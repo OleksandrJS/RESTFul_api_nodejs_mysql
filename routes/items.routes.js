@@ -72,7 +72,7 @@ router.post(
 
       await Item.update(
         {
-          image: `http://localhost:5000/image-${item.id}.jpg`,
+          image: `https://restful-api-nodejs-mysql.herokuapp.com/image-${item.id}.jpg`,
         },
         { where: { id: item.id } },
       );
