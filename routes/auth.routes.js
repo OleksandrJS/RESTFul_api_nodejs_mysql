@@ -101,9 +101,11 @@ router.post(
 
       const user = await User.findOne({ where: { email } });
 
-      const userPassword = user !== null ? user.password : '';
+      if (!user) {
+        return res.status(404).send();
+      }
 
-      const isMatch = await bcrypt.compare(password, userPassword);
+      const isMatch = await bcrypt.compare(password, user.password);
 
       if (!user || !isMatch) {
         return res.status(422).json({
