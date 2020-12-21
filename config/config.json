@@ -1,0 +1,22 @@
+{
+  "production": {
+    "host": "eu-cdbr-west-03.cleardb.net",
+    "username": "b52bdd42370106",
+    "database": "heroku_3b9f83f3e5b5e7f",
+    "password": "31bd82d6",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    }
+  },
+  "development": {
+    "host": "localhost",
+    "username": "root",
+    "database": "restful_api",
+    "password": "password",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    }
+  }
+}
